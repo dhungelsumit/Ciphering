@@ -1,7 +1,12 @@
 import string
-key1=input("Enter the key ")
-key1=int(key1)
-    
+def inputt():
+    key1=input("Enter the key ")
+    key1=int(key1)
+    if key1<1 or key1>26:
+        inputt()
+    else:
+        return key1
+key1=int(inputt())
 
 text=input("Enter text to be ciphered ")
 length=len(text)
